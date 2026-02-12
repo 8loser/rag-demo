@@ -1,0 +1,9 @@
+# Embedding & Semantic Search (01, 02)
+sentence-transformers>=3.4,<4
+qdrant-client>=1.16,<2
+
+# RAG Pipeline (03)
+langchain-huggingface>=1.2,<2
+langchain-qdrant>=1.1,<2
+langchain-ollama>=1.0,<2
+langchain-core>=1.2,<2

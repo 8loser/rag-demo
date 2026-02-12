@@ -20,11 +20,7 @@ source venv/bin/activate
 
 ### 2. 安裝套件
 ```bash
-# 基礎 (01, 02)
-pip install sentence-transformers qdrant-client
-
-# RAG pipeline (03)
-pip install langchain-huggingface langchain-qdrant langchain-ollama langchain-core
+pip install -r requirements.txt
 ```
 
 ### 3. 啟動服務
