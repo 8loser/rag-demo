@@ -1,5 +1,5 @@
 """
-Qdrant 向量資料庫語義搜尋範例
+Demo2: Qdrant 向量資料庫語義搜尋範例
 
 功能：
 - 使用 paraphrase-multilingual-MiniLM-L12-v2 多語言模型將文字轉換為向量
@@ -7,19 +7,15 @@ Qdrant 向量資料庫語義搜尋範例
 - 執行語義搜尋，找出與查詢問題最相關的內容
 
 前置需求：
-1. 啟動 Qdrant 容器
-   ```
-   podman run --name qdrant -p 6333:6333 -p 6334:6334 \
-       -v $(pwd)/qdrant_storage:/qdrant/storage:z \
-       docker.io/qdrant/qdrant
-   ```
-   Web 界面：
-   http://localhost:6333/dashboard
-   http://127.0.0.1:6333/dashboard
-
-2. 安裝 Python 依賴套件
-   pip install sentence-transformers qdrant-client
-
+啟動 Qdrant 容器
+```
+podman run --name qdrant -p 6333:6333 -p 6334:6334 \
+    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
+    docker.io/qdrant/qdrant
+```
+Web 界面：
+http://localhost:6333/dashboard
+http://127.0.0.1:6333/dashboard
 """
 
 import os

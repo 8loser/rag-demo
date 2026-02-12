@@ -1,5 +1,5 @@
 """
-RAG (Retrieval-Augmented Generation) 完整演示
+Demo3: RAG (Retrieval-Augmented Generation) 完整演示
 
 展示重點：
 Retrieval   - 語義檢索相關文檔
@@ -9,16 +9,16 @@ Generation   - LLM 生成答案
 使用場景：企業內部知識庫問答系統
 
 前置需求：
-1. 啟動 Ollama：ollama serve && ollama pull llama3
-2. 啟動 Qdrant：docker run -p 6333:6333 qdrant/qdrant
-3. 安裝依賴：pip install langchain-{huggingface,qdrant,ollama,core}
-4. 建立知識庫：python demo2.py
+1. 啟動 Ollama: ollama serve && ollama pull llama3
+2. 啟動 Qdrant: docker run -p 6333:6333 qdrant/qdrant
+3. 安裝依賴: pip install langchain-{huggingface,qdrant,ollama,core}
+4. 建立知識庫: python demo2.py
 
 後續可完善項目：
-- 避免幻覺機制（驗證答案是否基於參考資料）
-- 相似度閾值判定（過濾低相關文檔，如 score < 0.7）
-- 參考資料不足處理（檢索結果質量太低時的應對策略）
-- Prompt 參考資料使用指引（明確要求 LLM 僅基於提供資料回答）
+- 避免幻覺機制 (驗證答案是否基於參考資料）
+- 相似度閾值判定 (過濾低相關文檔，如 score < 0.7)
+- 參考資料不足處理 (檢索結果質量太低時的應對策略)
+- Prompt 參考資料使用指引 (明確要求 LLM 僅基於提供資料回答)
 """
 
 import os

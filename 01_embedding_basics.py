@@ -6,9 +6,6 @@ Demo 1: Sentence Transformers 基本使用
 - 載入的 embedding model (all-MiniLM-L6-v2)
 - 將文字轉換為向量特徵 (384 維)
 - 輸出向量形狀和部分數值
-
-前置需求：
-- pip install sentence-transformers
 """
 
 # 加上 huggingface 的鏡像站點環境變數，避免下載模型太慢
